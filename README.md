@@ -1,4 +1,6 @@
-# vue-rite-of-passage
+# 🖖 THE VUE RITE OF PASSAGE  🖖
+
+This project is meant to help  
 
 ## Project setup
 ```
