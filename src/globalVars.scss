@@ -1,0 +1,11 @@
+// This file defines a bunch of SASS variables!
+//
+//
+
+$yellow: #e4d183;
+$orange: #ea8f79;
+$white: #f8f1e5;
+$purple: #9f609c;
+
+$gradient: linear-gradient(lighten($orange, 20%), lighten($orange, 10%));
+$box-shading: 2px 2px 10px rgba(0,0,0,.5);
