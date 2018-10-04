@@ -7,21 +7,23 @@
     <h3>What's wrong?: </h3>
     <p>
       Cabin number: 
-      <input type="number" v-model="currentMessage.number">
+      <input type="number" v-model="cabinNumber">
     </p>
     <p>
       Your message:
-      <textarea v-model="currentMessage.text"></textarea>
+      <textarea v-model="text" @keyup.enter="sendMessage()"></textarea>
     </p>
-    <p>Once you submit your message, it should appear below</p>
-    <button>Send!!</button>
+    <p style="font-weight: bold;">Once you submit your message, it should appear below - similar to how we'd like our chat page to work! </p>
+    <p>To send your message to us, simply then print out this webpage and mail it to us!</p>
+    <p>555 Grizzly Hollow, Bearburg, Alberta, Canada</p>
+    <button @click="sendMessage()">Send!!</button>
   </div>
   
   <div class="widget" v-for="message in messages">
-    <p>Cabin Number: {{ message.number }}</p>
+    <p>Cabin Number: {{ message.cabinNumber }}</p>
     <p>Message: {{ message.text }}</p>
   </div>
-  
+    
 </div>
 </template>
 
@@ -29,18 +31,26 @@
 export default {
   data() {
     return {
-      currentMessage: {
-        number: 0,
-        text: '',
-      },
+      // These two variables will store the user's input before they submit it:
+      cabinNumber: 0,
+      text: '',
+      
+      // This will store an array of objects containing the info for all our different messages
       messages: []
     }
   },
   methods: {
-    sendMessage(message) {
-      this.messages.push(this.currentMessage);
-      this.currentMessage.number = 0;
-      this.currentMessage.text = 0;
+    sendMessage() {
+      // Setting up the object we want to push into the array:
+      var message = {
+        cabinNumber: this.cabinNumber,
+        text: this.text
+      }
+      // Adding that object to the end of our array:
+      this.messages.push(message);
+      // Now, we reset the user's input, so they can create a new message:
+      this.cabinNumber = 0;
+      this.text = '';
     }
   }
 }

@@ -2,6 +2,7 @@
 <div>
   <h1>Grizzly Chat</h1>
   <h2>Chat with other bears in the community:</h2>
+  <p><i>Warning: The chat page is currently broken. If only someone would fix it :(</i></p>
   
   <div class="widget chat-widget">
     <div class="chat-details">

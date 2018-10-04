@@ -20,6 +20,7 @@
   
   <div class="widget" >
     <h3>Our Sister Company, Horse Hotel</h3>
+    <p><i>Warning: The horse name calculator is currently broken :/</i></p>
     <p>If you didn't like your bear name, type below to find out your horse name. Maybe you'll like that more:</p>
     <input>
     <p>Your regular name: </p>
