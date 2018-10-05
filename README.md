@@ -64,6 +64,17 @@ Then, put a [v-for](https://vuejs.org/v2/guide/#Conditionals-and-Loops) on the <
 
 There's also a working example of what this should look like on the contact page of the website. 
 
+## Challenge 3: THE FINAL CHALLENGE 📚
+
+Finally, we want you make your own page for Grizzly Getaway booking! Create a new `.vue` file in the components folder called `Book.vue` or something similar. Then, go into `/src/router.js` and add your new component to the `/book` path!
+
+Then, decorate the book file however you want. Feel free to be creative and play around with some of Vue's neat features. 
+
+# Submitting your Project 🏆
+
+Send your project's github link to Ben Holland for your prize - a hearty congradulations and bragging rights!
+
+
 
 
 
